@@ -1,0 +1,29 @@
+ create table projeto (
+	 id integer not null,
+	 nome varchar not null,
+	 curso varchar not null,
+	 primary key(id)
+ )
+ 
+ create table participantes(
+	 id integer not null,
+	 nome varchar not null,
+	 primary key(id)
+ )
+ 
+ alter table participantes add column datanascimento timestamp null
+ 
+ select * from projeto
+ select * from participantes
+ 
+ insert into projeto values('1','Projeto Pouso Alegre','Engenharia')
+ insert into participantes values('1','Douglas','06/04/2001')
+ 
+ 
+ 
+ ALTER SEQUENCE Seq_Id_Particip RESTART WITH 2;
+  ALTER SEQUENCE Seq_Id_Proj RESTART WITH 2;
+ 
+ 
+ 
+ 
